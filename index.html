@@ -137,7 +137,6 @@
             method: 'PUT',
             body: file,
         }).then(res => {
-                console.log(res);
                 getPrice(key);
             }
         )
@@ -156,7 +155,6 @@
         }).then(res =>
             res.json()
         ).then(data => {
-            console.log(data);
             document.getElementById("loader-outside").style.display = "none";
             document.getElementById("box3").style.display = "flex";
             document.getElementById("price-outside").style.display = "flex";
@@ -171,5 +169,6 @@
 </script>
 </body>
 </html>
+
 
 
