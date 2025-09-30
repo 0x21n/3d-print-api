@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>3d File quote</title>
+    <link rel="stylesheet" href="../style.css"/>
+
+</head>
+<body>
+<div id="circle-container"></div>
+
+<div class="top-gap"></div>
+<main>
+    <div class="main-container-outside">
+
+        <div class="main-container">
+
+
+        <p>Tilaus Valims!</p>
+
+        </div>
+    </div>
+
+</main>
+
+<script>
+
+
+        fetch("https://tx5xriohj3em3modyq4pmxep3a0sduta.lambda-url.eu-north-1.on.aws/", {
+            method: "POST",
+        }).then(res =>
+            res.json()
+        ).then(data => {
+            bucket = data.bucket;
+            sendFile(uploadInput.files[0], bucket, data.key)
+        })
+
+    };
+
+
+</script>
+</body>
+</html>
+
+
