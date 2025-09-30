@@ -25,19 +25,16 @@
 </main>
 
 <script>
+const urlParams = new URLSearchParams(window.location.search);
+const parameter = urlParams.get('session_id');
+console.log(parameter)
 
-
-        fetch("https://tx5xriohj3em3modyq4pmxep3a0sduta.lambda-url.eu-north-1.on.aws/", {
-            method: "POST",
-        }).then(res =>
-            res.json()
-        ).then(data => {
-            bucket = data.bucket;
-            sendFile(uploadInput.files[0], bucket, data.key)
-        })
-
-    };
-
+    fetch("https://avgvhjiiuosz2ujigkosle35v40ljgrp.lambda-url.eu-north-1.on.aws/, {
+        method: "POST",
+          body: JSON.stringify({
+                "key": key,
+            })
+    })
 
 </script>
 </body>
